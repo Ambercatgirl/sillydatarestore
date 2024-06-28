@@ -1,0 +1,20 @@
+<head>
+    <script src="dies.js"></script>
+    <link rel="stylesheet" href="dies3.css">
+</head>
+<body>
+    <button id="export" onclick="prepareExport()">Export</button>
+    <div id="oreHolder">
+        <div class="oreAmtHolder" id="clone1" style="display: none;">
+            <p class="oreLabel">🇺🇬</p>
+            <input type="text" placeholder="Normal" class="oreAmtInput"></input>
+            <input type="text" placeholder="Electrified" class="oreAmtInput"></input>
+            <input type="text" placeholder="Radioactive" class="oreAmtInput"></input>
+            <input type="text" placeholder="Explosive" class="oreAmtInput"></input>
+            <button class="applyAmts" onclick="getOreAmts(this.parentElement)">Apply</button>
+        </div>
+    </div>
+    <div id="itemHolder">
+        <button class="item" id="clone2" onclick="toggle(this)"></button>
+    </div>
+</body>
